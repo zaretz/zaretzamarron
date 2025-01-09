@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Galería</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        .gallery-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .gallery-section p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zaret Zamarrón</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="fotos/foto1.jpg" alt="Foto 1">
+            <img src="fotos/foto2.jpg" alt="Foto 2">
+            <img src="fotos/foto6.jpg" alt="Foto 3">
+            <img src="fotos/foto4.jpg" alt="Foto 4">
+            <img src="fotos/foto5.jpg" alt="Foto 5">
+            <img src="fotos/foto7.jpg" alt="Foto 6">
+            <img src="fotos/foto15.jpg" alt="Foto 7">
+            <img src="fotos/foto10.jpg" alt="Foto 8">
+            <img src="fotos/foto11.jpg" alt="Foto 9">
+            <img src="fotos/foto12.jpg" alt="Foto 10">
+            <img src="fotos/foto13.jpg" alt="Foto 11">
+            <img src="fotos/foto14.jpg" alt="Foto 12">
+        </div>
+    </section>
+</body>
+</html>
